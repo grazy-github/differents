@@ -25,7 +25,7 @@ Vamos criar nosso repositório:
 - Depois de criado ele já aparece na tela do repositório com algumas informações úteis. Copie e cole em um notepad, pois depois do nosso commit essas informações não aparecerão mais.
 
 Em nosso computador.
-git@github.com:michelribeiro/conexao-com-github.git
+git@github.com:seu-usuariogit/conexao-com-github.git
 - Vamos definir uma pasta para nosso projeto. Criaremos um arquivo chamado README.md.
 - Podemos abrir esse arquivo no notepad ou no editor de texto que preferir. Adicione no arquivo um texto qualquer.
 
@@ -36,7 +36,14 @@ Atentem em mudar as informações de configuração abaixo para a do seu GITHUB!
 git init
 git add README.md
 git commit -m "Meu primeiro commit"
-git remote add origin git@github.com:seu-usuario/seu-repositorio.git
+git remote add origin git@github.com:seu-usuariogit/seu-repositorio.git
 git push -u origin master
 
 OBS: No primeiro commit ele perguntará yes/no. Digite yes e nos próximos commits não pedirá mais nada.
+
+
+----------
+passo a passo no gitbash aqui --> (comandos-gitbash) 
+ou caminho completo 
+https://github.com/grazy-github/differents.githttps://github.com/grazy-github/differents/blob/personal/comandos-gitbash
+
