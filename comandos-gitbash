@@ -1,0 +1,263 @@
+
+gh@DESKTOP-I54RGS8 MINGW64 ~
+$ git config --global user.name "grazy-github"
+
+gh@DESKTOP-I54RGS8 MINGW64 ~
+$ git config --global user.name "grazy-github"
+
+gh@DESKTOP-I54RGS8 MINGW64 ~
+$ git config --global "graziela-gloria@hotmail.com"
+error: invalid key: graziela-gloria@hotmail.com
+
+gh@DESKTOP-I54RGS8 MINGW64 ~
+$ git config --global user.email "graziela-gloria@hotmail.com"
+
+gh@DESKTOP-I54RGS8 MINGW64 ~
+$ git config --global --list
+user.name=grazy-github
+user.email=graziela-gloria@hotmail.com
+
+gh@DESKTOP-I54RGS8 MINGW64 ~
+$ ssh-keygen -t rsa -b 4096 -C "graziela-gloria@hotmail.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/gh/.ssh/id_rsa):
+Created directory '/c/Users/gh/.ssh'.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/gh/.ssh/id_rsa
+Your public key has been saved in /c/Users/gh/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:EjXtsBvgTZpSzK+1KXb7EHSwfb9a7gNSQ/yhqOBg47A graziela-gloria@hotmail.com
+The key's randomart image is:
++---[RSA 4096]----+
+|     o  +. .     |
+|      =.o=. o .  |
+|     o.Bo+oo.o . |
+|  . = =o*.o.+..  |
+|   = =.+S* . ..  |
+|  E . =.*.. .  . |
+|     . o.. . .o  |
+|        ..   +.  |
+|         .. ..o. |
++----[SHA256]-----+
+
+gh@DESKTOP-I54RGS8 MINGW64 ~
+$ ssh-agent -s
+SSH_AUTH_SOCK=/tmp/ssh-YmLq5vCs2S3C/agent.954; export SSH_AUTH_SOCK;
+SSH_AGENT_PID=955; export SSH_AGENT_PID;
+echo Agent pid 955;
+
+gh@DESKTOP-I54RGS8 MINGW64 ~
+$ clip < ~/.ssh/id_rsa.pub
+
+gh@DESKTOP-I54RGS8 MINGW64 ~
+$ ssh -T git@github.com
+The authenticity of host 'github.com (140.82.121.4)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+Hi grazy-github! You've successfully authenticated, but GitHub does not provide shell access.
+
+gh@DESKTOP-I54RGS8 MINGW64 ~
+$ git remote https://github.com/grazy-github/tutorial-html
+fatal: not a git repository (or any of the parent directories): .git
+
+gh@DESKTOP-I54RGS8 MINGW64 ~
+$ git remote git@github.com:grazy-github/tutorial-html.git
+fatal: not a git repository (or any of the parent directories): .git
+
+gh@DESKTOP-I54RGS8 MINGW64 ~
+$ git remote -v
+fatal: not a git repository (or any of the parent directories): .git
+
+gh@DESKTOP-I54RGS8 MINGW64 ~
+$ cd c:/
+
+gh@DESKTOP-I54RGS8 MINGW64 /c
+$ cd Users/
+
+gh@DESKTOP-I54RGS8 MINGW64 /c/Users
+$ cd gh
+
+gh@DESKTOP-I54RGS8 MINGW64 ~
+$ cd Projects/
+
+gh@DESKTOP-I54RGS8 MINGW64 ~/Projects
+$ cd tutotial-html/
+bash: cd: tutotial-html/: No such file or directory
+
+gh@DESKTOP-I54RGS8 MINGW64 ~/Projects
+$ git .init
+git: '.init' is not a git command. See 'git --help'.
+
+The most similar command is
+        init
+
+gh@DESKTOP-I54RGS8 MINGW64 ~/Projects
+$ cd tutorial-html/
+
+gh@DESKTOP-I54RGS8 MINGW64 ~/Projects/tutorial-html
+$ git .init
+git: '.init' is not a git command. See 'git --help'.
+
+The most similar command is
+        init
+
+gh@DESKTOP-I54RGS8 MINGW64 ~/Projects/tutorial-html
+$ git init
+Initialized empty Git repository in C:/Users/gh/Projects/tutorial-html/.git/
+
+gh@DESKTOP-I54RGS8 MINGW64 ~/Projects/tutorial-html (master)
+$ git add README.md
+
+gh@DESKTOP-I54RGS8 MINGW64 ~/Projects/tutorial-html (master)
+$ git commit -m "first commit"
+[master (root-commit) 55bf8b1] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+gh@DESKTOP-I54RGS8 MINGW64 ~/Projects/tutorial-html (master)
+$ git add bat
+
+gh@DESKTOP-I54RGS8 MINGW64 ~/Projects/tutorial-html (master)
+$ git commit -m "bat commit"
+[master 7551524] bat commit
+ 3 files changed, 1068 insertions(+)
+ create mode 100644 bat/MailHandler.php
+ create mode 100644 bat/libmail.php
+ create mode 100644 bat/recaptchalib.php
+
+gh@DESKTOP-I54RGS8 MINGW64 ~/Projects/tutorial-html (master)
+$ git add css
+
+gh@DESKTOP-I54RGS8 MINGW64 ~/Projects/tutorial-html (master)
+$ git add images
+
+gh@DESKTOP-I54RGS8 MINGW64 ~/Projects/tutorial-html (master)
+$ git add js
+
+gh@DESKTOP-I54RGS8 MINGW64 ~/Projects/tutorial-html (master)
+$ git add index.html
+
+gh@DESKTOP-I54RGS8 MINGW64 ~/Projects/tutorial-html (master)
+$ git add index-
+index-4.html  index-5.html
+
+gh@DESKTOP-I54RGS8 MINGW64 ~/Projects/tutorial-html (master)
+$ git commit -m "all files commit"
+[master 58d3943] all files commit
+ 81 files changed, 12471 insertions(+)
+ create mode 100644 css/animate.css
+ create mode 100644 css/camera.css
+ create mode 100644 css/contact-form.css
+ create mode 100644 css/google-map.css
+ create mode 100644 css/grid.css
+ create mode 100644 css/style.css
+ create mode 100644 images/camera-loader.gif
+ create mode 100644 images/corner-1.svg
+ create mode 100644 images/favicon.ico
+ create mode 100644 images/footer-.jpg
+ create mode 100644 images/footer-round-left.svg
+ create mode 100644 images/footer-round-right.svg
+ create mode 100644 images/footer.jpg
+ create mode 100644 images/gmap_marker.png
+ create mode 100644 images/gmap_marker_active.png
+ create mode 100644 images/header.jpg
+ create mode 100644 images/logo.png
+ create mode 100644 images/mail.png
+ create mode 100644 images/page-1_icon01.png
+ create mode 100644 images/page-1_icon02.png
+ create mode 100644 images/page-1_img01-.jpg
+ create mode 100644 images/page-1_img01.jpg
+ create mode 100644 images/page-1_img02-.jpg
+ create mode 100644 images/page-1_img02.jpg
+ create mode 100644 images/page-1_img02.psd
+ create mode 100644 images/page-1_img03-.jpg
+ create mode 100644 images/page-1_img03.jpg
+ create mode 100644 images/page-1_img04-.jpg
+ create mode 100644 images/page-1_img04.jpg
+ create mode 100644 images/page-1_img05-.jpg
+ create mode 100644 images/page-1_img05.jpg
+ create mode 100644 images/page-1_img06-.jpg
+ create mode 100644 images/page-1_img06.jpg
+ create mode 100644 images/page-1_parallax01-.jpg
+ create mode 100644 images/page-1_parallax01.jpg
+ create mode 100644 images/page-2_img01.jpg
+ create mode 100644 images/page-2_img02.jpg
+ create mode 100644 images/page-3_img01.jpg
+ create mode 100644 images/page-3_img02.jpg
+ create mode 100644 images/page-3_img03.jpg
+ create mode 100644 images/page-3_parallax01-.jpg
+ create mode 100644 images/page-4_img01.jpg
+ create mode 100644 images/page-4_img02.jpg
+ create mode 100644 images/page-4_img03.jpg
+ create mode 100644 images/page-4_img04.jpg
+ create mode 100644 images/page-4_img05.jpg
+ create mode 100644 images/page-4_img06.jpg
+ create mode 100644 images/page-4_img07.jpg
+ create mode 100644 images/page-5_parallax01.jpg
+ create mode 100644 images/parallax-round-after.svg
+ create mode 100644 images/parallax-round-before.svg
+ create mode 100644 images/slide01-.jpg
+ create mode 100644 images/slide01.jpg
+ create mode 100644 images/slide02-.jpg
+ create mode 100644 images/slide02.jpg
+ create mode 100644 images/slide03-.jpg
+ create mode 100644 images/slide03.jpg
+ create mode 100644 images/slider-corner.svg
+ create mode 100644 images/subpage-img-corner.svg
+ create mode 100644 index.html
+ create mode 100644 js/TMForm.js
+ create mode 100644 js/camera.js
+ create mode 100644 js/device.min.js
+ create mode 100644 js/html5shiv.js
+ create mode 100644 js/jquery-migrate-1.2.1.js
+ create mode 100644 js/jquery.cookie.js
+ create mode 100644 js/jquery.easing.1.3.js
+ create mode 100644 js/jquery.equalheights.js
+ create mode 100644 js/jquery.js
+ create mode 100644 js/jquery.mobile.customized.min.js
+ create mode 100644 js/jquery.mousewheel.min.js
+ create mode 100644 js/jquery.rd-google-map.js
+ create mode 100644 js/jquery.rd-navbar.js
+ create mode 100644 js/jquery.rd-parallax.js
+ create mode 100644 js/jquery.simplr.smoothscroll.min.js
+ create mode 100644 js/jquery.ui.totop.js
+ create mode 100644 js/modal.js
+ create mode 100644 js/script.js
+ create mode 100644 js/superfish.js
+ create mode 100644 js/tmstickup.js
+ create mode 100644 js/wow.js
+
+gh@DESKTOP-I54RGS8 MINGW64 ~/Projects/tutorial-html (master)
+$ git add index-4.html
+
+gh@DESKTOP-I54RGS8 MINGW64 ~/Projects/tutorial-html (master)
+$ git add index-5.html
+
+gh@DESKTOP-I54RGS8 MINGW64 ~/Projects/tutorial-html (master)
+$ git commit -m "html files commit"
+[master 1598fee] html files commit
+ 2 files changed, 454 insertions(+)
+ create mode 100644 index-4.html
+ create mode 100644 index-5.html
+
+gh@DESKTOP-I54RGS8 MINGW64 ~/Projects/tutorial-html (master)
+$ git branch -M main
+
+gh@DESKTOP-I54RGS8 MINGW64 ~/Projects/tutorial-html (main)
+$ git remote add origin git@github.com:grazy-github/tutorial-html.git
+
+gh@DESKTOP-I54RGS8 MINGW64 ~/Projects/tutorial-html (main)
+$ git push -u origin main
+Enumerating objects: 99, done.
+Counting objects: 100% (99/99), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (97/97), done.
+Writing objects: 100% (99/99), 5.50 MiB | 1.21 MiB/s, done.
+Total 99 (delta 11), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (11/11), done.
+To github.com:grazy-github/tutorial-html.git
+ * [new branch]      main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
